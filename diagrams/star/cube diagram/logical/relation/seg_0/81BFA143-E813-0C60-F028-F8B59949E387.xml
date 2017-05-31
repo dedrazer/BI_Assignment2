@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="81BFA143-E813-0C60-F028-F8B59949E387">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 16:23:30 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<sourcePk>B794AE63-3157-3E7F-C3CF-E88B9B312395</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A93645F3-6C05-8722-1BBB-25F9A6DF793D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6270920-645B-A890-51A2-8CF6333D8523</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

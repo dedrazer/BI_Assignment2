@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="7A95F60D-B01E-2BCD-C087-665175E2DE17">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:07:21 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

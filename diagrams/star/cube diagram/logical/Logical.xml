@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F028BD8F-52D9-2226-59B0-3E39CB447503" mainViewID="B7495AF8-3959-3832-6D20-9BD84F739B89">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:07:20 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

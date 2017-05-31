@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="9F0BAC6C-E4A0-E810-97AF-4AD3F0D19375">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:07:21 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

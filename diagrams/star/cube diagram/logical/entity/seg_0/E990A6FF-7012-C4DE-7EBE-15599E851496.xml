@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E990A6FF-7012-C4DE-7EBE-15599E851496" name="Time">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:31:56 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Time Key" id="E64EF526-0740-7100-3E86-EAA0C6D4B294">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:32:06 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order Date" id="ED647A4E-BDF4-A3E3-E4E7-2DE23FDD16D9">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:32:22 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Year" id="082E30E6-D7C5-F31E-1185-565AD1607627">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-24 15:08:54 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Month" id="EF07D258-F661-DD03-BC14-10C1BC5D3345">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-24 15:09:33 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Day" id="F9D221B4-7FAA-8992-8F0C-2371184C38C1">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-24 15:09:51 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EEA5EF88-48F2-D4C5-D76B-0E3B9975D7D5" name="Time PK">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:32:19 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E64EF526-0740-7100-3E86-EAA0C6D4B294</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

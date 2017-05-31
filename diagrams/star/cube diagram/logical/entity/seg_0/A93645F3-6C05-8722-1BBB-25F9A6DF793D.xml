@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A93645F3-6C05-8722-1BBB-25F9A6DF793D" name="Order Item">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:38:45 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Order Key" id="E094D859-F6DB-91B7-9EF8-85484D636996">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 16:22:31 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order OLTP ID" id="34ED4F45-3379-E997-B88F-FE0B687B62EC">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-24 15:14:21 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Units Sold" id="4F053467-0920-A720-AA83-DDAFE65975B0">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:38:57 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Store Price" id="F72B934C-5EC0-417C-4569-9E0F4B9709DE">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:39:33 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Store Cost" id="E2FF391A-423F-420E-7A23-36AD6FD6B907">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:39:15 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Product Name" id="3D3E036E-C159-0CB4-A3F9-AADDE304FCA8">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-30 08:43:37 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B794AE63-3157-3E7F-C3CF-E88B9B312395" name="Order Item PK">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 16:22:39 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E094D859-F6DB-91B7-9EF8-85484D636996</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8D983E96-46F2-D103-D497-3148053032B0" name="OrderUN">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-30 08:44:01 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<newElementsIDs>34ED4F45-3379-E997-B88F-FE0B687B62EC,3D3E036E-C159-0CB4-A3F9-AADDE304FCA8</newElementsIDs>
+<usedAttributes>
+<attributeRef>34ED4F45-3379-E997-B88F-FE0B687B62EC</attributeRef>
+<attributeRef>3D3E036E-C159-0CB4-A3F9-AADDE304FCA8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

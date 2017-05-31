@@ -1,0 +1,14 @@
+possible investigations
+
+1) look for fluctuations in a particular field (increased sales in a particular category, store, region, time)
+2) how popular categories are in specific regions
+3) rank top spending client categories
+4) discover affluence (class)
+5) quarters of sales per country
+6) predict 1998 sales for a country or smth
+7) total number of brands per countyr per year per store type
+
+-r shiny displays data is image
+
+investigations
+

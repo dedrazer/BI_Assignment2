@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C7E3376-26AC-6F29-E6FD-A747722013C6" name="Client">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:07:29 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Client Key" id="003770A2-C82F-9910-66AE-C8FA83B7DD54">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:22:52 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Client OLTP ID" id="144F9C99-15AB-489E-E4D8-3F1FCDB6B553">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:03 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OccupationName" id="5AAC64D6-48B6-5411-83F2-5E27ED8EC4C0">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:36:00 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MembershipLevelName" id="553D0F81-B5C1-8D93-AAC7-7F6C94C24CC1">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:36:23 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EducationLevelName" id="B3F8E79F-3658-BE9B-0E61-FE36644DBE48">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:36:41 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YearlyIncomeDescription" id="E87DCE58-D409-4602-D50E-7AFBA909BF78">
+<createdBy>a100365</createdBy>
+<createdTime>2017-05-22 07:37:00 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gender" id="9356DC4F-DEA8-C946-C363-DF188249F0D4">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:54 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Car Count" id="A5691B82-0EA0-A6EF-4579-C51A9DCE3BBF">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:29:46 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Child Count" id="F88E8EC4-C164-AD21-429F-1E1225FBB8A6">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:29:57 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Children at residence" id="E9592081-68C5-7855-1525-79F64D39EC9D">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:30:31 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Maritial Status" id="EC38BA7A-533E-3AFC-93BA-414D52055E36">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:24:02 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Is Home Owner" id="D07DE869-00BB-4B1C-5C52-E984EB8462A7">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:30:39 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date of Birth" id="B8057B75-02E3-3FD7-2455-2D9E6FA6F9FF">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:43 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First Name" id="56BF328A-73C5-1ECF-D7D4-3908A55D186C">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:14 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last Name" id="38AFD3BD-8161-75A4-7FC6-3996717BE3E3">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:26 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PostCode" id="B63B0BE1-81AD-6BDA-B27A-C8FE1712C1BA">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:29:34 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Membership Date" id="F475C1B3-F003-5116-23C4-6AA8472F8BC8">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:30:54 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C6D30427-7118-7CC1-984E-4BF1AC88C752" name="CLIENT PK">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 14:23:02 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>003770A2-C82F-9910-66AE-C8FA83B7DD54</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CD1A2B77-2FAF-D7FC-16F4-C661D149EF02" name="Client OLTP UN">
+<createdBy>meli</createdBy>
+<createdTime>2017-05-12 16:21:32 UTC</createdTime>
+<ownerDesignName>cube diagram</ownerDesignName>
+<newElementsIDs>144F9C99-15AB-489E-E4D8-3F1FCDB6B553</newElementsIDs>
+<usedAttributes>
+<attributeRef>144F9C99-15AB-489E-E4D8-3F1FCDB6B553</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
