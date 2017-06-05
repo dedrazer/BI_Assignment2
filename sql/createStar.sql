@@ -77,11 +77,9 @@ go
 
 create table star.saleFact(
 	saleKey uniqueidentifier not null primary key default newsequentialid()
-	, orderOLTPId uniqueidentifier not null
 	, clientKey uniqueidentifier not null foreign key references star.client(clientKey)
-	, orderKey uniqueidentifier not null foreign key references star.orderItem(orderKey)
+	, orderKey uniqueidentifier unique not null foreign key references star.orderItem(orderKey)
 	, timeKey uniqueidentifier not null foreign key references star.[time](timeKey)
-	, unique (orderOLTPId, orderKey)
 );
 go
 
@@ -150,5 +148,16 @@ begin
 	insert into star.[time](orderDate, [year], [month], [day])
 				(select distinct	orderDate, datepart(year, orderDate), datepart(month, orderDate), datepart(day, orderDate)
 				from	oltp.[order]);
+
+	insert into star.saleFact (orderKey, clientKey, timeKey)
+				(select distinct	orderKey, clientKey, timeKey
+				from	star.orderItem oit
+						left join oltp.[order] oor
+						on (oor.orderId = oit.orderOLTPId)
+						join star.client cli
+						on (oor.clientId = cli.clientOLTPId)
+						join star.[time] tim
+						on (oor.orderDate = tim.orderDate));
+
 end;
 go

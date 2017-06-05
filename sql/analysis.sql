@@ -1,8 +1,24 @@
--- average spenditure by yearly income
+-- OLTP
+
+-- pinpoint missing data
+select	*
+from	oltp.[order] ord
+		join oltp.store sto
+		on (ord.storeId = sto.storeId)
+		join oltp.city cty
+		on (sto.cityId = cty.cityId)
+		join oltp.region reg
+		on cty.regionId = reg.regionId
+		join oltp.country ctr on reg.countryId = ctr.countryId
+where	datepart(year, orderDate) = 1997
+		and countryName = 'Mexico';
+go
+
+-- average spending by yearly income
 select	sum(unitsSold*storePrice) as total
 		, incomeDescription
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
@@ -11,14 +27,14 @@ from	oltp.orderItem ori
 		join oltp.yearlyIncome yli
 		on (cli.incomeId = yli.incomeId)
 group by	incomeDescription
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by education level
+-- average spending by education level
 select	sum(unitsSold * storePrice) as total
 		, levelName
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
@@ -27,14 +43,14 @@ from	oltp.orderItem ori
 		join oltp.educationLevel edl
 		on (cli.levelId = edl.levelId)
 group by	levelName
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by membership level
+-- average spending by membership level
 select	sum(unitsSold * storePrice) as total
 		, membershipLevelName
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
@@ -46,11 +62,11 @@ group by	membershipLevelName
 order by	total;
 go
 
--- average spenditure by occupation
+-- average spending by occupation
 select	sum(unitsSold * storePrice) as total
 		, occupationName
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
@@ -59,88 +75,88 @@ from	oltp.orderItem ori
 		join oltp.occupation occ
 		on (cli.occupationId = occ.occupationId)
 group by	occupationName
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by gender
+-- average spending by gender
 select	sum(unitsSold * storePrice) as total
 		, gender
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	gender
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by maritial status
+-- average spending by maritial status
 select	sum(unitsSold * storePrice) as total
 		, maritialStatus
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	maritialStatus
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by car count
+-- average spending by car count
 select	sum(unitsSold * storePrice) as total
 		, carCount
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	carCount
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by child count
+-- average spending by child count
 select	sum(unitsSold * storePrice) as total
 		, childCount
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	childCount
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 -- at home
 select	sum(unitsSold * storePrice) as total
 		, childAtHomeCount
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	childAtHomeCount
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
 
--- average spenditure by home owner
+-- average spending by home owner
 select	sum(unitsSold * storePrice) as total
 		, isHomeOwner
 		, count(distinct cli.clientId) as clients
-		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpenditure
+		, (sum(unitsSold*storePrice)/count(distinct cli.clientId)) as averageSpending
 from	oltp.orderItem ori
 		join oltp.[order] ord
 		on (ori.orderId = ord.orderId)
 		join oltp.client cli
 		on (ord.clientId = cli.clientId)
 group by	isHomeOwner
-order by	averageSpenditure desc;
+order by	averageSpending desc;
 go
